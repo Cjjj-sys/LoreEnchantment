@@ -43,7 +43,7 @@ world.events.entityHurt.subscribe(async (e) => {
       switch (name) {
         case "§r§l§6攻击力":
           e.hurtEntity.addTag("beAttacked_TempTag");
-          let result = await player.runCommandAsync(
+          await player.runCommandAsync(
             `damage @e[tag=beAttacked_TempTag] ${value} entity_attack entity ${player.name}`
           );
         case "§r§l§2毒液附加":
