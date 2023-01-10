@@ -1,0 +1,34 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "LoreEnchantment",
+    "description": "a LoreEnchantment script using ScriptAPI(GameTest Framework) for Minecraft Bedrock Server.",
+    "uuid": "d1175806-e2dd-4f1a-832d-47bba5e41a19",
+    "version": [0, 0, 1],
+    "min_engine_version": [1, 19, 40]
+  },
+  "modules": [
+    {
+      "description": "Script resources",
+      "language": "javascript",
+      "type": "script",
+      "uuid": "4c20214a-25d1-4478-ba53-20653358ce20",
+      "version": [0, 0, 1],
+      "entry": "scripts/main.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.1.0-beta"
+    },
+    {
+      "module_name": "@minecraft/server-net",
+      "version": "1.0.0-beta"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "1.0.0-beta"
+    }
+  ]
+}
